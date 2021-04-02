@@ -51,12 +51,11 @@ Using the burger object below do the following:
   For example: burger.discount("teacher") would return 13.5 and burger.discount("public") would return 16.2
 */
 
-
 export const burger = {
   name: "Burger", 
   price: 18, 
   category: "Lunch", 
-  /*Your code here*/
+
   discount: function(status) {
     let discount = burger.price;
     if (status === "student" || status === "teacher") {
@@ -184,10 +183,18 @@ Use the getReviewsByRating function below to do the following:
   ]
 */
 
- function getReviewByRating(/* code here */) {
-    /* code here */
-  }
+// function getReviewByRating(arr, rating) {
+//   let arrByRating =[];
+//     for(let i in arr) {
+//       let roundedRating = Math.floor(arr[i].rating);
+//     if (roundedRating === rating) {
+//       arrByRating.push(arr[i]);
+//     }
+//   }
+//   return arrByRating;
+// }
 
+//   console.log(getReviewByRating(reviews, 4))
   
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪💪💪💪💪   
 Use the getLongReviews function below to do the following:
@@ -202,10 +209,19 @@ Use the getLongReviews function below to do the following:
   ]
 */
 
-function getLongReviews(/* code here */) {
-    /* code here */
-  }
-  
+// function getLongReviews(arr) {
+//   let arrByWords =[];
+//     for(let i in arr) {
+//       let feedbackL = arr[i].feedback.split(" ").length; 
+//     if (feedbackL > 15) {
+//       arrByWords.push(arr[i])
+//     }
+//   }
+//   return arrByWords;
+// }  
+
+// console.log(getLongReviews(reviews))
+
 
 /* 💪💪💪💪💪💪💪💪💪💪 STRETCH 3: 💪💪💪💪💪💪💪💪💪💪 
 This stretch goal does not use the reviews data!  You create your own object in this stretch goal.
@@ -225,10 +241,17 @@ Use the carMaker function below to do the following:
 */
 
 
-function carMaker(/* code here */) {
-    /* code here */
-    
-}
+// function carMaker(odometer) {
+//   return {
+//     drive: function(distance){
+//       odometer += distance;
+//       return odometer
+//     }
+//   }  
+// }
+
+// const car1 = carMaker(10)
+// console.log(car1.drive(100))
 
 
 /* 🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑 */
